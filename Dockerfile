@@ -1,5 +1,5 @@
-FROM registry.access.redhat.com/rhel7:latest
-MAINTAINER cevich@redhat.com
+FROM centos:latest
+MAINTAINER cmsj@tenshu.net
 RUN yum install -y deltarpm yum-utils &&\
     yum update -y && \
     yum install avahi -y && \
